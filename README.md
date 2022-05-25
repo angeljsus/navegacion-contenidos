@@ -70,8 +70,9 @@ navpage1.addEventListener('click', function(){
 ```
 ##### Detectando posicionamiento
 Por medio del evento `scroll` del contenedor se lee la cantidad de contenido recorrido por el usuario y permite añadir los esitlos para que sea marcada la navegación, este evento es habilitado ejecutando la siguiente función:
-* `detectarScroll(style, limiteRecorrido)`
-    * style: cadena de estilo que contendra el elemento de navegación de la posición en que se encuentra.
+* `detectarScroll(stylSelected, stylNoSelect, limiteRecorrido)`
+    * stylSelected: cadena de estilo que contendra el elemento de navegación.
+    * stylNoSelect: cadena de estilo que contendra los elementos de navegación no seleccionados.
     * limiteRecorrido: valor numerico de la cantidad que se espera recorrer como límite para marcar el contenido siguiente del 1 al 100.
 ###### Ejemplo:
 Cada sección tendrá estilos de border de 2px de color rojo y cada sección puede ser navegada hasta el 80% de contenido, para marcar el siguiente contenido, las demás no tendrán bordes.
